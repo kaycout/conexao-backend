@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="carregar()">
+    <nav>
+        <ul>
+            <li><a href="#" id="home"> home </a></li>
+            <li><a href="#" id="cadastro"> cadastro </a></li>
+        </ul>
+    </nav>
+
+    <form id="form" onsubmit="return false;">
+    <input type="text" id="txtnome" placeholder="Nome do Cliente">
+    <input type="email" id="txtemail" placeholder="Email">
+    <input type="text" id="txtusuario" placeholder="Usuario">
+    <input type="password" id="txtsenha" placeholder="Senha">
+    <input type="submit" value="cadastrar" onclick="cadastrar()">
+</form>
+
+    <div id="container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
